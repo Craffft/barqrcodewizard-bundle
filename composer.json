@@ -1,0 +1,34 @@
+{
+    "name": "craffft/barqrcodewizard-bundle",
+    "type": "symfony-bundle",
+    "description": "Contao 4 barqrcodewizard bundle",
+    "keywords": ["barcode", "qrcode", "wizard", "contao"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Kiesel",
+            "homepage": "https://github.com/iCodr8"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Craffft/barqrcodewizard-bundle/issues",
+        "source": "https://github.com/Craffft/barqrcodewizard-bundle"
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "contao/core-bundle": "~4.1"
+    },
+    "conflict": {
+        "contao/core": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Craffft\\BarqrcodewizardBundle\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "4.2.x-dev"
+        }
+    }
+}
