@@ -36,6 +36,7 @@ class AppKernel extends Kernel
         $bundles = array(
             // ...
 
+            new BG\BarcodeBundle\BarcodeBundle(),
             new Craffft\BarqrcodewizardBundle\CraffftBarqrcodewizardBundle(),
         );
 
