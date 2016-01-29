@@ -1,43 +1,25 @@
 <?php
 
-/**
- * Contao Open Source CMS
+/*
+ * This file is part of the Barqrcodewizard Bundle.
  *
- * Copyright (c) 2005-2014 Leo Feyer
+ * (c) Daniel Kiesel <https://github.com/iCodr8>
  *
- * @package    barqrcodewizard
- * @author     Daniel Kiesel <https://github.com/icodr8>
- * @license    http://www.gnu.org/licenses/lgpl-3.0.html LGPL
- * @copyright  Daniel Kiesel 2014
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
 
-
-/**
- * Namespace
- */
 namespace BarQRcode;
 
+use Craffft\BarqrcodewizardBundle\Generator\Barcode;
+use Craffft\BarqrcodewizardBundle\Util\DataCallback;
 
-/**
- * Class BarcodeWizard
- *
- * @copyright  Daniel Kiesel 2013-2014
- * @author     Daniel Kiesel <https://github.com/icodr8>
- * @package    barqrcodewizard
- */
 class BarcodeWizard extends \Widget
 {
-
-    /**
-     * Template
-     * @var string
-     */
     protected $strTemplate = 'be_widget';
 
-
     /**
-     * Trim values
-     * @param mixed
+     * @param mixed $varInput
      * @return mixed
      */
     protected function validator($varInput)
@@ -45,23 +27,18 @@ class BarcodeWizard extends \Widget
         return parent::validator(trim(DataCallback::getInstance()->getData($this)));
     }
 
-
     /**
-     * Generate the widget and return it as string
      * @return string
      */
     public function generate()
     {
-        // Get data
         $this->varValue = DataCallback::getInstance()->getData($this);
-
-        // Set barcode class
         $this->strClass = (($this->strClass != '') ? ' ' : '') . 'barcode';
 
         return sprintf('<div id="ctrl_%s"%s><div>%s<div>%s</div></div></div>%s',
             $this->strId,
             (($this->strClass != '') ? ' class="' . $this->strClass . '"' : ''),
-            BarcodeGenerator::generateHtml($this->varValue),
+            Barcode::generateHtml($this->varValue),
             $this->varValue,
             $this->wizard);
     }

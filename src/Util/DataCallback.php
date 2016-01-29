@@ -1,39 +1,23 @@
 <?php
 
-/**
- * Contao Open Source CMS
+/*
+ * This file is part of the Barqrcodewizard Bundle.
  *
- * Copyright (c) 2005-2014 Leo Feyer
+ * (c) Daniel Kiesel <https://github.com/iCodr8>
  *
- * @package    barqrcodewizard
- * @author     Daniel Kiesel <https://github.com/icodr8>
- * @license    http://www.gnu.org/licenses/lgpl-3.0.html LGPL
- * @copyright  Daniel Kiesel 2014
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
 
+namespace Craffft\BarqrcodewizardBundle\Util;
 
-/**
- * Namespace
- */
-namespace BarQRcode;
-
-
-/**
- * Class DataCallback
- *
- * @copyright  Daniel Kiesel 2013-2014
- * @author     Daniel Kiesel <https://github.com/icodr8>
- * @package    barqrcodewizard
- */
 class DataCallback extends \Controller
 {
-
     /**
      * Object instance (Singleton)
      * @var \DataCallback
      */
     protected static $objInstance;
-
 
     /**
      * Calls the data_callback.
@@ -58,7 +42,6 @@ class DataCallback extends \Controller
         return null;
     }
 
-
     /**
      * Prevent direct instantiation (Singleton)
      *
@@ -68,7 +51,6 @@ class DataCallback extends \Controller
     {
     }
 
-
     /**
      * Prevent cloning of the object (Singleton)
      *
@@ -77,7 +59,6 @@ class DataCallback extends \Controller
     final public function __clone()
     {
     }
-
 
     /**
      * Instantiate the cache object (Factory)
