@@ -10,15 +10,9 @@
  */
 
 /**
- * Define BARQRCODEWIZARD_PATH
- */
-define('BARQRCODEWIZARD_PATH', 'src/Craffft/BarqrcodewizardBundle/Resources/contao');
-define('BARQRCODEWIZARD_PUBLIC_PATH', 'bundles/craffftbarqrcodewizard');
-
-/**
  * Add css file
  */
-$GLOBALS['TL_CSS'][] = BARQRCODEWIZARD_PUBLIC_PATH . '/barqrcodewizard.css';
+$GLOBALS['TL_CSS'][] = 'bundles/craffftbarqrcodewizard/barqrcodewizard.css';
 
 /**
  * BACK END FORM FIELDS

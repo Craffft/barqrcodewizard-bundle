@@ -26,6 +26,6 @@ ClassLoader::addNamespaces(array
 ClassLoader::addClasses(array
 (
     // Widgets
-    'BarQRcode\BarcodeWizard'    => 'src/Craffft/BarqrcodewizardBundle/Resources/contao/widgets/BarcodeWizard.php',
-    'BarQRcode\QRcodeWizard'     => 'src/Craffft/BarqrcodewizardBundle/Resources/contao/widgets/QRcodeWizard.php',
+    'BarQRcode\BarcodeWizard'    => 'vendor/craffft/barqrcodewizard-bundle/src/Resources/contao/widgets/BarcodeWizard.php',
+    'BarQRcode\QRcodeWizard'     => 'vendor/craffft/barqrcodewizard-bundle/src/Resources/contao/widgets/QRcodeWizard.php',
 ));
