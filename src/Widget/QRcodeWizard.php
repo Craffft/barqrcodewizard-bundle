@@ -9,12 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace BarQRcode;
+namespace Craffft\BarqrcodewizardBundle\Widget;
 
+use Contao\Widget;
 use Craffft\BarqrcodewizardBundle\Generator\QRcode;
 use Craffft\BarqrcodewizardBundle\Util\DataCallback;
 
-class QRcodeWizard extends \Widget
+class QRcodeWizard extends Widget
 {
     protected $strTemplate = 'be_widget';
 

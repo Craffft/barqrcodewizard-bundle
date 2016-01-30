@@ -32,5 +32,5 @@ $GLOBALS['TL_CSS'][] = 'bundles/craffftbarqrcodewizard/barqrcodewizard.css';
  * field is rendered. The class "FieldClass1" has to be stored in a file named
  * "FieldClass1.php" in your module folder.
  */
-$GLOBALS['BE_FFL']['qrcodewizard'] = 'QRcodeWizard';
-$GLOBALS['BE_FFL']['barcodewizard'] = 'BarcodeWizard';
+$GLOBALS['BE_FFL']['qrcodewizard'] = '\\Craffft\\BarqrcodewizardBundle\\Widget\\QRcodeWizard';
+$GLOBALS['BE_FFL']['barcodewizard'] = '\\Craffft\\BarqrcodewizardBundle\\Widget\\BarcodeWizard';
