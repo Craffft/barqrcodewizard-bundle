@@ -36,7 +36,7 @@ class DataCallback extends \Controller
 
             return $this->$arrData['data_callback'][0]->$arrData['data_callback'][1]($objWidget);
         } elseif (is_callable($arrData['data_callback'])) {
-            return $arrData['data_callback']($this);
+            return $arrData['data_callback']($objWidget);
         }
 
         return null;
